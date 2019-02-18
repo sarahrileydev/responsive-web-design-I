@@ -294,8 +294,22 @@ footer {
 	width: 100%;
 }
 
+@media (max-width: 800px){
+  .services-header-img {
+    width: 90%;
+    margin-left: 30px;
+  }
+}
+
 .services-top-content {
 	padding: 30px 0;
+}
+
+@media (max-width: 800px){
+  .services-top-content {
+    width: 90%;
+    margin-left: 30px;
+  }
 }
 
 .services-top-content h2 {
@@ -310,6 +324,14 @@ footer {
 	justify-content: space-between;
 	padding: 20px 0;
 }
+
+@media (max-width: 800px){
+  .services-main-content {
+    width: 90%;
+    margin-left: 30px;
+  }
+}
+
 .services-box {
 	width: 47%;
 	background-color: whitesmoke;
@@ -327,6 +349,13 @@ footer {
 	justify-content: space-between;
 	padding: 30px 0;
 	margin-bottom: 40px;
+}
+
+@media (max-width: 800px){
+  .services-bottom-content {
+    width: 75%;
+    margin-left: 4%;
+  }
 }
 
 .services-bottom-content section {
