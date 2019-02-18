@@ -208,6 +208,12 @@ button {
   margin: 20px 0;
 }
 
+@media (max-width: 500px){
+  .main-top {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 
 @media (max-width: 800px){
   .main-top section {
@@ -215,14 +221,32 @@ button {
   }
 }
 
+@media (max-width: 500px){
+  .main-top section{
+    padding-bottom: 20px;
+  }
+}
+
 .middle-img {
 	width: 100%;
 }
 
-
 .main-bottom {
   display: flex;
   margin: 20px 0;
+}
+
+@media (max-width: 500px){
+  .main-bottom {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px){
+  .main-bottom section{
+    padding-bottom: 20px;
+  }
 }
 
 .main-bottom section:not(:first-child) {
