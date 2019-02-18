@@ -125,7 +125,7 @@ header nav a {
 
 .top-content {
 	padding: 40px 0;
-	display: flex;
+  display: flex;
 }
 
 @media (max-width: 800px){
@@ -178,7 +178,8 @@ button {
 }
 
 .main-top {
-	display: flex;
+  display: flex;
+  margin: 20px 0;
 }
 
 
@@ -193,14 +194,9 @@ button {
 }
 
 
-@media (max-width: 800px){
-  .middle-img {
-    padding: 25px 0;
-  }
-}
-
 .main-bottom {
-	display: flex;
+  display: flex;
+  margin: 20px 0;
 }
 
 .main-bottom section:not(:first-child) {
