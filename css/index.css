@@ -1,3 +1,411 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 880px;
+	margin: 0 auto;
+	line-height: 1.25;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+}
+
+header {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 20px 0 0;
+
+  }
+}
+
+header nav {
+	width: 60%;
+}
+
+@media (max-width: 800px) {
+  header nav {
+   width: 80%;
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+
+  }
+}
+
+@media (max-width: 500px) {
+  header nav {
+   width: 100%;
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+  }
+}
+
+header nav a {
+	text-decoration: none;
+	padding: 10px 30px 10px 0;
+  color: gray;
+ 
+}
+
+@media (max-width: 500px) {
+  header nav a{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 800px){
+  header nav a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.logo {
+	padding-left: 40px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media (max-width: 800px){
+  .logo {
+    padding-left: 0px;
+  }
+}
+
+.top-content {
+	padding: 40px 0;
+  display: flex;
+}
+
+@media (max-width: 800px){
+  .top-content {
+    padding: 40px 0 0 0;
+  }
+}
+
+.top-content-left {
+	height: 379px;
+	font-size: 60px;
+	text-align: center;
+	width: 55%;
+	padding: 50px 0 0 50px;
+}
+
+@media (max-width: 800px){
+  .top-content-left {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px){
+  .top-content-left h1{
+    margin-bottom: 0;
+  }
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 2px;
+	background-color: white;
+	padding: 7px 50px;
+}
+
+
+@media (max-width: 800px){
+  .header-img {
+    display: none;
+  }
+}
+
+.main-content {
+	border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+@media (max-width: 800px){
+  .main-content {
+    width: 100%;
+    padding: 2%;
+  }
+}
+
+.main-top {
+  display: flex;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px){
+  .main-top {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px){
+  .main-top section {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 500px){
+  .main-top section{
+    padding-bottom: 20px;
+  }
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.main-bottom {
+  display: flex;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px){
+  .main-bottom {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px){
+  .main-bottom section{
+    padding-bottom: 20px;
+  }
+}
+
+.main-bottom section:not(:first-child) {
+	padding-left: 10px;
+}
+
+@media (max-width: 800px){
+  .main-bottom section:not(:first-child) {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 800px){
+  .main-bottom section:first-child {
+    padding-left: 20px;
+  }
+}
+
+.contact {
+	padding: 30px 0 30px;
+}
+
+@media (max-width: 800px){
+  .contact {
+    padding: 30px 0 30px 30px;
+  }
+}
+
+address {
+	padding-bottom: 20px;
+}
+
+.contact p {
+	padding-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 100px;
+} 
+
+/* SERVICES STYLES*/
+
+.services-header-img {
+	width: 100%;
+}
+
+@media (max-width: 800px){
+  .services-header-img {
+    width: 100%;
+    
+  }
+}
+
+.services-top-content {
+	padding: 30px 0;
+}
+
+@media (max-width: 800px){
+  .services-top-content {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.services-top-content h2 {
+	font-size: 24px;
+}
+
+.services-main-content {
+	border-top: 1px solid black;
+	border-bottom: 1.5px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.services-box {
+	width: 47%;
+	background-color: whitesmoke;
+	border: 1px solid black;
+	margin: 20px 0;
+	padding: 20px 20px 20px 15px;
+}
+
+@media (max-width: 800px){
+  .services-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+.services-btn {
+	margin-top: 20px;
+}
+
+.services-bottom-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 800px){
+  .services-bottom-content {
+    flex-direction: column-reverse;
+  }
+}
+
+.services-bottom-content section {
+	width: 47%;
+}
+
+.services-bottom-content section ul {
+	line-height: 1.8;
+	list-style-type: square;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+@media (max-width: 800px){
+  .services-info-img {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 800px){
+  .bottom-content {
+    padding: 20px 0 0 35px;
+  }
+}
+
+
+/* VISION STYLES */
+
+.vision-header-img {
+	width: 100%;
+	height: 400px;
+}
+
+.vision-box {
+	background-color: violet;
+	height: 200px;
+	width: 200px;
+}
+
+.vision-top-content {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.vision-bottom-content {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 60px;
+}
 
